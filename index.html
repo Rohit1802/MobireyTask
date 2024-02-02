@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Display Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="information">
+            <div class="manual-key">
+                <h2>QR Code Details</h2>
+                <form class="horizontal-form" id="qrCodeForm">
+                    <div class="form-group">
+                        <label for="Date">Date:</label>
+                        <input type="date" id="Date" name="Date" class="fixed-size-input" value="2024-02-01" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Time">Time:</label>
+                        <input type="text" id="Time" name="Time" class="fixed-size-input" value="12:00 PM" readonly />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="LegacyPartId">LegacyPartId</label>
+                        <input type="text" id="LegacyPartId" name="LegacyPartId" class="fixed-size-input" value="123" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="EmpID">EmployeeID</label>
+                        <input type="text" id="EmpID" name="EmpID" class="fixed-size-input" value="rjk2019" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="MinThickness">Min Thickness</label>
+                        <input type="text" id="MinThickness" name="MinThickness" class="fixed-size-input" value="2mm" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="MaxThickness">Max Thickness</label>
+                        <input type="text" id="MaxThickness" name="MaxThickness" class="fixed-size-input" value="5mm" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="AvgThickness">Avg Thickness</label>
+                        <input type="text" id="AvgThickness" name="AvgThickness" class="fixed-size-input"
+                            value="3.5mm" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="manual-key2">
+                <h2>System</h2>
+                <form class="horizontal-form" id="systemForm">
+                    <div class="form-group">
+                        <label for="Status">Status</label>
+                        <input type="text" id="Status" name="Status" class="fixed-size-input" value="completed" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ChangeLog">Change Log:</label>
+                        <input type="text" id="ChangeLog" name="ChangeLog" class="fixed-size-input" value="Done" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="SlicingBatch">Slicing Batch</label>
+                        <input type="text" id="SlicingBatch" name="SlicingBatch" class="fixed-size-input"
+                            value="B141" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Description">Description</label>
+                        <input type="text" id="SlicingBatch" name="SlicingBatch" class="fixed-size-input"
+                            value="best quality and modern" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="form">
+            <div class="info">
+                <p>
+                    Weight:
+                    <input id="weight" type="text" placeholder="Enter weight in Kg" class="input" />
+                </p>
+                <p>
+                    Length:
+                    <input id="length" type="text" placeholder="Enter length in Cm" class="input" />
+                </p>
+                <p>
+                    Width:
+                    <input id="width" type="text" placeholder="Enter width in Cm" class="input" />
+                </p>
+                <p>
+                    Target Density:
+                    <input id="targetDensity" placeholder="Enter density" type="text" class="input" />
+                </p>
+            </div>
+            <div class="label" id="label">
+            </div>
+            <button onclick="submitForm()" class="info">Submit</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", 'sans-serif';
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.manual-key,
+.manual-key2 {
+  width: 400px;
+  border-radius: 10px;
+  border: 3px solid #bbbbbb;
+  box-sizing: border-box;
+  margin: 1rem;
+  background-color: #fff;
+}
+
+.manual-key h2,
+.manual-key2 h2 {
+  margin-bottom: 1rem;
+  background-color: grey;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.horizontal-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 0 15px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 0 15px;
+}
+
+label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.fixed-size-input {
+  width: 220px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 400px;
+  height: 640px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  margin: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+}
+
+.form h2 {
+  background-color: grey;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.info {
+  margin: 10px 20px;
+}
+
+.input-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-right: 10px;
+}
+
+select {
+  width: 60%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.label {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  padding: 2rem 5rem;
+  margin-bottom: 10px;
+  margin: 0 20px;
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(15, 161, 15);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: rgb(20, 176, 20);
+  transform: scale(1.02);
+}
